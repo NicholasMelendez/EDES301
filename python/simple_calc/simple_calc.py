@@ -54,7 +54,10 @@ Error conditions:
 
 # NOTE - Add import statements to allow access to Python library functions
 # NOTE - Hint:  Look at  https://docs.python.org/3/library/operator.html
+from __future__ import print_function
 import operator
+
+
 
 # ------------------------------------------------------------------------
 # Constants
@@ -84,7 +87,8 @@ def get_user_input():
         Returns tuple:  (number, number, function) or 
                         (None, None, None) if inputs invalid
     """
-    # NOTE - Use "try"/"except" statements to allow code to handle errors gracefully.      
+    # NOTE - Use "try"/"except" statements to allow code to handle errors gracefully.   
+    
     try:
         # NOTE - Use "pass" statements to allow code to be run without having to 
         # NOTE - fill out the contents.  This pass statement should be removed   
@@ -126,7 +130,12 @@ if __name__ == "__main__":
     # NOTE -   - Execute the function on the numbers and print the results
 
     # NOTE - Use "pass" statements to allow code to be run without having to 
-    # NOTE - fill out the contents.  This pass statement should be removed    
+    # NOTE - fill out the contents.  This pass statement should be removed   
+    try:
+        input = raw_input
+    except NameError:
+        pass
+        
     while True:
         (num1, num2, func) = get_user_input()
         if(num1 == None) or (num2 == None) or (func ==None):
