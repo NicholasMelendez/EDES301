@@ -68,7 +68,7 @@ import operator
 
 # NOTE - Global variable to map an operator string (e.g. "+") to 
 # NOTE - the appropriate function.
-operators = {"+": operator.add, "-" : operator.sub, "*": operator.mul, "/": operator.truediv}
+operators = {"+": operator.add, "-" : operator.sub, "*": operator.mul, "/": operator.truediv, ">>" : operator.rshift, "<<": operator.lshift, "%":operator.mod,"**": operator.pow}
     # Dictionary syntax:  "key" : "value"
     #   i.e. "function" : operator.<function>
 
@@ -90,7 +90,7 @@ def get_user_input():
         # NOTE - fill out the contents.  This pass statement should be removed   
         number1 = float(input("Enter first number: "))
         number2 = float(input("Enter second number: "))
-        op      = input("Enter function ( valid values are +, -, *, /): ")
+        op      = input("Enter function ( valid values are +, -, *, /, >>, <<, %, **): ")
         funct = operators.get(op)
        
     
@@ -132,5 +132,8 @@ if __name__ == "__main__":
         if(num1 == None) or (num2 == None) or (func ==None):
             print("Invalid Input")
             break
-        print(func(float(num1),float(num2)))
+        if(func == "operator.rshift" or "operator.lshift"):
+            print(func(int(num1), int(num2)))
+        else:
+            print(func(float(num1),float(num2)))
 
