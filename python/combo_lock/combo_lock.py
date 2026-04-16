@@ -101,7 +101,7 @@ class CombinationLock():
     
     def __init__(self, reset_time=2.0, button="P2_2", 
                        red_led="P2_6", green_led="P2_4",
-                       potentiometer="P1_19", servo="P1_36", 
+                       potentiometer="P1_19", servo="P1_36", buzzer ="P2_1",
                        i2c_bus=1, i2c_address=0x70, debug=False):
         """ Initialize variables and set up display """
 
