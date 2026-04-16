@@ -6,9 +6,11 @@ If you have not already wired up your pocketbeagle, 4 pin USB port, and your LCD
 
 
 Before getting started please run these lines which allows the microphone to collect data:
-> sudo apt-get update<
->> sudo apt-get install libasound2-dev python3-pip<
->> pip3 install pyaudio numpy<
+> sudo apt-get update
+
+> sudo apt-get install libasound2-dev python3-pip
+
+> pip3 install pyaudio numpy
 
 
 
