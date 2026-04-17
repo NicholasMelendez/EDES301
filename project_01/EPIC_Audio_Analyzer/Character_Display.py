@@ -30,3 +30,51 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 --------------------------------------------------------------------------
+"""
+import Adafruit_CharLCD as LCD
+import Adafruit_BBIO.GPIO as GPIO
+
+# --- Constants ---
+LCD_RS        = "P2_4"
+LCD_EN        = "P2_6"
+LCD_D4        = "P2_8"
+LCD_D5        = "P2_10"
+LCD_D6        = "P2_17"
+LCD_D7        = "P2_18"
+LCD_COLUMNS   = 16
+LCD_ROWS      = 2
+
+class Character_Display:
+    """ Interface for the 16x2 Character LCD """
+
+    def __init__(self):
+        """ Initialize the LCD hardware """
+        
+        self.lcd = LCD.Adafruit_CharLCD(LCD_RS, LCD_EN, LCD_D4, LCD_D5, LCD_D6, LCD_D7,
+                                        LCD_COLUMNS, LCD_ROWS)
+        self.lcd.clear()
+        self.show_message("System Ready\nIdle Mode")
+
+    def show_message(self, text):
+        """ Display a string on the LCD """
+        
+        self.lcd.clear()
+        self.lcd.message(text)
+
+    def display_freq(self, freq):
+        """ Specifically formatted for real-time frequency updates """
+        
+        if freq:
+            # Format to 2 decimal places with Hz label
+            msg = "Peak Frequency:\n{:.2f} Hz".format(freq)
+        else:
+            msg = "Scanning...\nNo Signal"
+        
+        self.lcd.set_cursor(0, 0) # Update without flickering the whole screen
+        self.lcd.message(msg)
+
+    def clear(self):
+        """ Clear the display """
+        self.lcd.clear()
+
+# End Class
