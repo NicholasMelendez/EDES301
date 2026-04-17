@@ -30,3 +30,58 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 --------------------------------------------------------------------------
+"""
+import pyaudio
+
+# --- Constants ---
+FORMAT         = pyaudio.paInt16 
+CHANNELS       = 1
+RATE           = 44100
+CHUNK_SIZE     = 2048
+DEVICE_INDEX   = 1  # Card number from running "arecord -l" 
+
+class Microphone:
+    """ USB Microphone Hardware Interface """
+
+    def __init__(self):
+        """ Initialize the audio interface """
+        
+        self.p = pyaudio.PyAudio()
+        self.stream = None
+
+    def start_stream(self):
+        """ Open the hardware port for data collection """
+        
+        if self.stream is None:
+            self.stream = self.p.open(
+                format=FORMAT,
+                channels=CHANNELS,
+                rate=RATE,
+                input=True,
+                input_device_index=DEVICE_INDEX,
+                frames_per_buffer=CHUNK_SIZE
+            )
+
+    def stop_stream(self):
+        """ Close the port to save power/CPU """
+        
+        if self.stream:
+            self.stream.stop_stream()
+            self.stream.close()
+            self.stream = None
+
+    def get_data(self):
+        """ Pull raw bytes from the buffer """
+        if self.stream:
+            try:
+                return self.stream.read(CHUNK_SIZE, exception_on_overflow=False)
+            except Exception as e:
+                return None
+        return None
+
+    def cleanup(self):
+        """ Full teardown of the audio system """
+        self.stop_stream()
+        self.p.terminate()
+
+# End Class

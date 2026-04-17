@@ -30,3 +30,50 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 --------------------------------------------------------------------------
+""" 
+import numpy as np
+
+# --- Constants ---
+SAMPLE_RATE    = 44100  # Standard CD Quality
+FFT_SIZE       = 2048   # N (Number of samples per window)
+NOISE_FLOOR    = 500    # Minimum magnitude to register as "sound"
+
+class AudioAnalyzer:
+    """ Audio Analysis Class using FFT """
+
+    def __init__(self, sample_rate=SAMPLE_RATE, fft_size=FFT_SIZE):
+        """ Initialize variables for FFT analysis """
+        
+        self.fs = sample_rate
+        self.n = fft_size
+        
+        # Pre-calculate the frequency values for each bin
+        self.freq_bins = np.fft.rfftfreq(self.n, d=1/self.fs)
+
+    def get_dominant_frequency(self, raw_data):
+        """ 
+        Perform FFT and return the peak frequency in Hz 
+        Returns: float (Frequency in Hz) or None if below noise floor
+        """
+        # Convert byte data to 16-bit integers
+        samples = np.frombuffer(raw_data, dtype=np.int16)
+
+        # Apply Hanning Window to reduce spectral leakage into other bins
+        windowed_samples = samples * np.hanning(len(samples))
+
+        # Compute Real FFT
+        fft_result = np.fft.rfft(windowed_samples)
+        magnitudes = np.abs(fft_result)
+
+        # Find the bin with the highest magnitude
+        peak_index = np.argmax(magnitudes)
+        peak_mag = magnitudes[peak_index]
+
+        if peak_mag > NOISE_FLOOR:
+            
+            # Return the center frequency of that bin
+            return self.freq_bins[peak_index]
+        
+        return None
+
+# End Class
