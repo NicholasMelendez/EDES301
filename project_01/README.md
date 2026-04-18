@@ -9,7 +9,7 @@ Before getting started please run these lines which allows the microphone to col
 * sudo apt-get update         
 * sudo apt-get install libasound2-dev python3-pip            
 * pip3 install pyaudio numpy
-
+* sudo /usr/bin/python3 -m pip install pyaudio
 
 
 
