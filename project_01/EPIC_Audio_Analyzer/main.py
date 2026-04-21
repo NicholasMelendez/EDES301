@@ -46,7 +46,7 @@ STATE_ACTIVE      = 1     # Active state
 QUIT_HOLD_TIME    = 3.0   # Seconds to hold button to exit
 NOISE_TIMEOUT     = 15.0  # Seconds of silence before stopping mic
 LISTENING_DELAY   = 5.0   # Seconds of silence before showing "Listening..."
-LCD_UPDATE_RATE   = 0.3  # Update screen only every 500ms
+LCD_UPDATE_RATE   = 0.4  # Update screen only every 500ms
 class EPIC_Audio_Analyzer:
     def __init__(self):
         # Initialize Hardware Drivers
