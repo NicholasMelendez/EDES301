@@ -36,7 +36,7 @@ import numpy as np
 # --- Constants ---
 SAMPLE_RATE    = 44100  # Standard CD Quality
 FFT_SIZE       = 4096   # N (Number of samples per window)
-NOISE_FLOOR    = 5000    # Minimum magnitude to register as "sound"
+NOISE_FLOOR    = 1000   # Minimum magnitude to register as "sound"
 
 class AudioAnalyzer:
     """ Audio Analysis Class using FFT """
