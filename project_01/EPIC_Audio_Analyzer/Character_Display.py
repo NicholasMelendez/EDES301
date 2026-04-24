@@ -62,16 +62,15 @@ class Character_Display:
         self.lcd.message(text)
 
     def display_freq(self, freq):
-        """ Specifically formatted for real-time frequency updates """
-        
-        if freq:
-            # Format to 2 decimal places with Hz label
-            msg = "Peak Frequency:\n{:.2f} Hz".format(freq)
+        self.lcd.clear()
+        if freq == 0:
+            self.lcd.message("Freq: 0 Hz\nStatus: Silent")
+        elif freq < 1000:
+            # Standard Hz display
+            self.lcd.message("Freq: {:.1f} Hz\nRange: Low".format(freq))
         else:
-            msg = "Scanning...\nNo Signal"
-        
-        self.lcd.set_cursor(0, 0) # Update without flickering the whole screen
-        self.lcd.message(msg)
+            # kHz display for higher ranges (e.g., 15.4 kHz)
+            self.lcd.message("Freq: {:.2f} kHz\nRange: High".format(freq / 1000.0))
 
     def clear(self):
         """ Clear the display """

@@ -37,7 +37,7 @@ import pyaudio
 FORMAT         = pyaudio.paInt16 
 CHANNELS       = 1
 RATE           = 44100
-CHUNK_SIZE     = 2048
+CHUNK_SIZE     = 4096
 
 
 class Microphone:

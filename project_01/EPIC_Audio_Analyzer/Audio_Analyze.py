@@ -39,41 +39,41 @@ FFT_SIZE       = 4096   # N (Number of samples per window)
 NOISE_FLOOR    = 1000   # Minimum magnitude to register as "sound"
 
 class AudioAnalyzer:
-    """ Audio Analysis Class using FFT """
+    def __init__(self, sample_rate=SAMPLE_RATE, chunk_size=FFT_SIZE):
+        self.sample_rate = sample_rate
+        self.chunk_size = chunk_size
+       
+        self.window = np.hanning(chunk_size)
+       
+        self.threshold = 0.5
 
-    def __init__(self, sample_rate=SAMPLE_RATE, fft_size=FFT_SIZE):
-        """ Initialize variables for FFT analysis """
+    def get_dominant_frequency(self, data):
+       
+        audio_data = np.frombuffer(data, dtype=np.int16).astype(float)
+        audio_data = audio_data - np.mean(audio_data) 
         
-        self.fs = sample_rate
-        self.n = fft_size
+       
+        if len(audio_data) != len(self.window):
+            current_window = np.hanning(len(audio_data))
+        else:
+            current_window = self.window
+        audio_data = audio_data * current_window
         
-        # Pre-calculate the frequency values for each bin
-        self.freq_bins = np.fft.rfftfreq(self.n, d=1/self.fs)
-
-    def get_dominant_frequency(self, raw_data):
-        """ 
-        Perform FFT and return the peak frequency in Hz 
-        Returns: float (Frequency in Hz) or None if below noise floor
-        """
-        # Convert byte data to 16-bit integers
-        samples = np.frombuffer(raw_data, dtype=np.int16)
-
-        # Apply Hanning Window to reduce spectral leakage into other bins
-        windowed_samples = samples * np.hanning(len(samples))
-
-        # Compute Real FFT
-        fft_result = np.fft.rfft(windowed_samples)
-        magnitudes = np.abs(fft_result)
-
-        # Find the bin with the highest magnitude
-        peak_index = np.argmax(magnitudes)
-        peak_mag = magnitudes[peak_index]
-
-        if peak_mag > NOISE_FLOOR:
+       
+        magnitude = np.abs(np.fft.rfft(audio_data))
+        frequencies = np.fft.rfftfreq(len(audio_data), 1.0 / self.sample_rate)
+       
+        magnitude[frequencies < 30] = 0 
+        
+        
+        peak_index = np.argmax(magnitude)
+        peak_mag = magnitude[peak_index]
+        
+    
+        if peak_mag < 1.0: 
+            return 0.0
             
-            # Return the center frequency of that bin
-            return self.freq_bins[peak_index]
-        
-        return None
-
+        peak_freq = frequencies[peak_index]
+     
+        return peak_freq
 # End Class
