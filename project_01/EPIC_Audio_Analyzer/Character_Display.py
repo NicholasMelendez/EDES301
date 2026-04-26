@@ -63,15 +63,10 @@ class Character_Display:
 
     def display_freq(self, freq):
         self.lcd.clear()
-        if freq == 0:
-            self.lcd.message("Freq: 0 Hz\nStatus: Silent")
-        elif freq < 1000:
-            # Standard Hz display
-            self.lcd.message("Freq: {:.1f} Hz\nRange: Low".format(freq))
+        if freq <= 0.1: # Catch near-zero values
+            self.lcd.message("Freq: 0 Hz\nNothing Detected!")
         else:
-            # kHz display for higher ranges (e.g., 15.4 kHz)
-            self.lcd.message("Freq: {:.2f} kHz\nRange: High".format(freq / 1000.0))
-
+            self.lcd.message("Freq: {:.1f} Hz".format(freq))
     def clear(self):
         """ Clear the display """
         self.lcd.clear()

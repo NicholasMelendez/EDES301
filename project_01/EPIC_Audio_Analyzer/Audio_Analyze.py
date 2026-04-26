@@ -47,33 +47,25 @@ class AudioAnalyzer:
        
         self.threshold = 0.5
 
+
     def get_dominant_frequency(self, data):
-       
+        if data is None: return 0.0
+        
         audio_data = np.frombuffer(data, dtype=np.int16).astype(float)
-        audio_data = audio_data - np.mean(audio_data) 
+        audio_data = audio_data / 32768.0  # Normalized to -1.0 to 1.0
+        audio_data = audio_data - np.mean(audio_data) # Remove DC Offset
         
-       
-        if len(audio_data) != len(self.window):
-            current_window = np.hanning(len(audio_data))
-        else:
-            current_window = self.window
-        audio_data = audio_data * current_window
-        
-       
-        magnitude = np.abs(np.fft.rfft(audio_data))
+        magnitude = np.abs(np.fft.rfft(audio_data * self.window))
         frequencies = np.fft.rfftfreq(len(audio_data), 1.0 / self.sample_rate)
-       
-        magnitude[frequencies < 30] = 0 
         
+        magnitude[frequencies < 50] = 0 # Kill the hum
+        max_mag = np.max(magnitude)
         
-        peak_index = np.argmax(magnitude)
-        peak_mag = magnitude[peak_index]
-        
-    
-        if peak_mag < 1.0: 
+        # Try a threshold of 0.5. If it's too sensitive, move to 1.0
+        if max_mag < .7: 
             return 0.0
             
-        peak_freq = frequencies[peak_index]
-     
-        return peak_freq
+        return frequencies[np.argmax(magnitude)]
+         
+
 # End Class

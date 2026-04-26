@@ -70,6 +70,8 @@ class Microphone:
                     input_device_index=self.device_index,
                     frames_per_buffer=CHUNK_SIZE
                 )
+                for _ in range(5):
+                    self.stream.read(CHUNK_SIZE, exception_on_overflow=False)
             except Exception as e:
                 print(f"Failed to open stream: {e}")
                 

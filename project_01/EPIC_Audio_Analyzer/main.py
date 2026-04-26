@@ -44,9 +44,8 @@ BUTTON_PIN = "P2_25"      # Update pin as needed
 STATE_IDLE        = 0     # Idle state
 STATE_ACTIVE      = 1     # Active state
 QUIT_HOLD_TIME    = 3.0   # Seconds to hold button to exit
-NOISE_TIMEOUT     = 15.0  # Seconds of silence before stopping mic
-LISTENING_DELAY   = 5.0   # Seconds of silence before showing "Listening..."
-LCD_UPDATE_RATE   = 0.4  # Update screen only every 500ms
+NOISE_TIMEOUT     = 10    # Seconds of silence before stopping mic
+LCD_UPDATE_RATE   = 1  # Update screen only every 500ms
 class EPIC_Audio_Analyzer:
     def __init__(self):
         # Initialize Hardware Drivers
@@ -60,7 +59,7 @@ class EPIC_Audio_Analyzer:
         self.last_lcd_update = time.time()
         self.button_press_start = None
         
-        self.display.show_message("System Online\nState: IDLE")
+        self.display.show_message("EPIC AA Online!\nPress Button!:)")
 
     def toggle_state(self):
         """ Switches between Idle and Active modes """
@@ -70,7 +69,7 @@ class EPIC_Audio_Analyzer:
             self.state = STATE_ACTIVE
         else:
             self.mic.stop_stream()
-            self.display.show_message("System Ready\nState: IDLE")
+            self.display.show_message("EPIC AA Online!\nPress Button!")
             self.state = STATE_IDLE
         
 
@@ -86,7 +85,8 @@ class EPIC_Audio_Analyzer:
                 now = time.time()
 
                 is_pressed = (GPIO.input(BUTTON_PIN) == GPIO.LOW)
-
+                
+                
                 if is_pressed:
                     if self.button_press_start is None:
                         self.button_press_start = now
@@ -105,34 +105,41 @@ class EPIC_Audio_Analyzer:
                             self.toggle_state()
                         self.button_press_start = None
 
+           
                 if self.state == STATE_ACTIVE:
                     raw_audio = self.mic.get_data()
+                  
                     peak_hz = self.analyzer.get_dominant_frequency(raw_audio)
 
-                    if peak_hz:
-                        self.last_sound_time = now
+
+                    if peak_hz is not None:
                         if (now - self.last_lcd_update) > LCD_UPDATE_RATE:
                             self.display.display_freq(peak_hz)
                             self.last_lcd_update = now
-                    else:
-
-                        silence_duration = now - self.last_sound_time
+                            
+                           
+                            if peak_hz > 0:
+                                self.last_sound_time = now
+    
+    
                         
+                      
+                        silence_duration = now - self.last_sound_time
                         if silence_duration >= NOISE_TIMEOUT:
-                            print("15s Silence. Entering Sleep Mode.")
-                            self.toggle_state() # Switches to IDLE
-                else:
-                    self.last_sound_time = now
-
+                            self.cleanup()
+                    else:
+                        self.last_sound_time = now
+                
                 time.sleep(0.02)
         except Exception as e:
             print(f"Error: {e}")
             self.cleanup()
-
+        except KeyboardInterrupt:
+            self.cleanup()
     def cleanup(self):
         """ Safe shutdown of all hardware """
         self.running = False
-        self.display.show_message("Shutting Down...")
+        self.display.show_message("Done!")
         self.mic.cleanup()
         GPIO.cleanup()
         print("System Offline.")
