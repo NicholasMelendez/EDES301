@@ -36,7 +36,6 @@ import numpy as np
 # --- Constants ---
 SAMPLE_RATE    = 44100  # Standard CD Quality
 FFT_SIZE       = 4096   # N (Number of samples per window)
-NOISE_FLOOR    = 1000   # Minimum magnitude to register as "sound"
 
 class AudioAnalyzer:
     def __init__(self, sample_rate=SAMPLE_RATE, chunk_size=FFT_SIZE):
@@ -45,7 +44,6 @@ class AudioAnalyzer:
        
         self.window = np.hanning(chunk_size)
        
-        self.threshold = 0.5
 
 
     def get_dominant_frequency(self, data):
@@ -58,11 +56,11 @@ class AudioAnalyzer:
         magnitude = np.abs(np.fft.rfft(audio_data * self.window))
         frequencies = np.fft.rfftfreq(len(audio_data), 1.0 / self.sample_rate)
         
-        magnitude[frequencies < 50] = 0 # Kill the hum
+        magnitude[frequencies < 30] = 0 # Kill the hum
         max_mag = np.max(magnitude)
         
         # Try a threshold of 0.5. If it's too sensitive, move to 1.0
-        if max_mag < .7: 
+        if max_mag < .45: 
             return 0.0
             
         return frequencies[np.argmax(magnitude)]

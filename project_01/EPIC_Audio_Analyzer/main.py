@@ -45,7 +45,7 @@ STATE_IDLE        = 0     # Idle state
 STATE_ACTIVE      = 1     # Active state
 QUIT_HOLD_TIME    = 3.0   # Seconds to hold button to exit
 NOISE_TIMEOUT     = 10    # Seconds of silence before stopping mic
-LCD_UPDATE_RATE   = 1  # Update screen only every 500ms
+LCD_UPDATE_RATE   = .9    # Update screen only every 900ms
 class EPIC_Audio_Analyzer:
     def __init__(self):
         # Initialize Hardware Drivers
@@ -126,6 +126,8 @@ class EPIC_Audio_Analyzer:
                       
                         silence_duration = now - self.last_sound_time
                         if silence_duration >= NOISE_TIMEOUT:
+                            self.display.show_message("Sleep time :p\n Goodbye!")
+                            time.sleep(3)
                             self.cleanup()
                     else:
                         self.last_sound_time = now
