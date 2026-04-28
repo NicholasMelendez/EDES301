@@ -19,6 +19,21 @@ Before you download the software files, please make sure to run these lines of c
 *sudo /usr/bin/python3 -m pip install adafruit-blinka Adafruit_BBIO adafruit-charlcd pyaudio numpy
 
 
-In order to run the EPIC_Audio_Analyzer, please download all the python files and load them onto your EPIC_Audio_Analyzer directory/folder.
-After making sure all the python folders are installed in the same directory/folder, change into the EPIC_Audio_Analyzer directory/folder and
-run: python3 main.py and Enjoy!
+In order to run the EPIC_Audio_Analyzer, please download all the python files:
+
+*Audio_Analyze.py
+
+*button.py
+
+*Character_Display.py
+
+*Microphone.py
+
+*main.py
+
+
+and load them onto your EPIC_Audio_Analyzer directory/folder.
+
+After making sure all the python folders are installed in the same directory/folder, change into the EPIC_Audio_Analyzer directory/folder.
+
+Run: python3 main.py and Enjoy!
