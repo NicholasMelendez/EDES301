@@ -36,7 +36,7 @@ import numpy as np
 # --- Constants ---
 SAMPLE_RATE    = 44100  # Standard CD Quality
 FFT_SIZE       = 4096   # N (Number of samples per window)
-
+NOTE_NAMES     = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 class AudioAnalyzer:
     def __init__(self, sample_rate=SAMPLE_RATE, chunk_size=FFT_SIZE):
         self.sample_rate = sample_rate
@@ -50,20 +50,44 @@ class AudioAnalyzer:
         if data is None: return 0.0
         
         audio_data = np.frombuffer(data, dtype=np.int16).astype(float)
-        audio_data = audio_data / 32768.0  # Normalized to -1.0 to 1.0
-        audio_data = audio_data - np.mean(audio_data) # Remove DC Offset
         
+        
+        if (np.max(audio_data) - np.min(audio_data)) / 32768.0 < 0.005: 
+            return 0.0
+            
+        audio_data = (audio_data / 32768.0) - np.mean(audio_data)
         magnitude = np.abs(np.fft.rfft(audio_data * self.window))
         frequencies = np.fft.rfftfreq(len(audio_data), 1.0 / self.sample_rate)
         
-        magnitude[frequencies < 30] = 0 # Kill the hum
+        magnitude[frequencies < 50] = 0 
         max_mag = np.max(magnitude)
         
-        # Try a threshold of 0.5. If it's too sensitive, move to 1.0
-        if max_mag < .45: 
+        if max_mag < 0.05: 
             return 0.0
+
+       
+        threshold = max_mag * 0.4 
+        possible_peaks = np.where(magnitude > threshold)[0]
+        
+        if len(possible_peaks) > 0:
+            return frequencies[possible_peaks[0]]
             
-        return frequencies[np.argmax(magnitude)]
+        return 0.0
+        
+
+    def get_closest_pitch(self, freq):
+        if freq <= 20: 
+            return "None", 0, 0
+            
+        n = 12 * np.log2(freq / 440.0)
+        n_rounded = int(round(n))
+        cents_error = int((n - n_rounded) * 100)
+        
+        midi_number = n_rounded + 69
+        note_name = NOTE_NAMES[midi_number % 12]
+        octave = (midi_number // 12) - 1
+        
+        return note_name, octave, cents_error
          
 
 # End Class

@@ -40,12 +40,14 @@ import Character_Display as Character_Display
 import button as Button
 
 # --- Constants ---
-BUTTON_PIN = "P2_25"      # Update pin as needed
-STATE_IDLE        = 0     # Idle state
-STATE_ACTIVE      = 1     # Active state
-QUIT_HOLD_TIME    = 3.0   # Seconds to hold button to exit
-NOISE_TIMEOUT     = 10    # Seconds of silence before stopping mic
-LCD_UPDATE_RATE   = .9    # Update screen only every 900ms
+BUTTON_PIN        = "P2_25"  # Update pin as needed
+BUTTON_2_PIN      = "P2_27"
+STATE_IDLE        = 0        # Idle state
+STATE_ACTIVE      = 1        # Active state
+STATE_TUNER       = 2
+QUIT_HOLD_TIME    = 3.0      # Seconds to hold button to exit
+NOISE_TIMEOUT     = 10       # Seconds of silence before stopping mic
+LCD_UPDATE_RATE   = .9       # Update screen only every 900ms
 class EPIC_Audio_Analyzer:
     def __init__(self):
         # Initialize Hardware Drivers
@@ -53,6 +55,7 @@ class EPIC_Audio_Analyzer:
         self.analyzer = Audio_Analyzer.AudioAnalyzer()
         self.display = Character_Display.Character_Display()
         self.button = Button.Button(BUTTON_PIN)
+        self.button2 = Button.Button(BUTTON_2_PIN)
         self.state = STATE_IDLE
         self.running = True
         self.last_sound_time = time.time()
@@ -69,7 +72,7 @@ class EPIC_Audio_Analyzer:
             self.state = STATE_ACTIVE
         else:
             self.mic.stop_stream()
-            self.display.show_message("EPIC AA Online!\nPress Button!")
+            self.display.show_message("EPIC AA Online!\nPress Button! ;)")
             self.state = STATE_IDLE
         
 
@@ -85,8 +88,16 @@ class EPIC_Audio_Analyzer:
                 now = time.time()
 
                 is_pressed = (GPIO.input(BUTTON_PIN) == GPIO.LOW)
-                
-                
+                is_btn2_pressed = (GPIO.input(BUTTON_2_PIN) == GPIO.LOW)
+
+                if is_btn2_pressed:
+                    if self.state != STATE_TUNER:
+                        self.state = STATE_TUNER
+                        self.display.show_message("Tuning Mode\nActivated")
+                        time.sleep(0.5)
+                    else:
+                        self.state = STATE_ACTIVE 
+                        time.sleep(0.5)
                 if is_pressed:
                     if self.button_press_start is None:
                         self.button_press_start = now
@@ -106,38 +117,46 @@ class EPIC_Audio_Analyzer:
                         self.button_press_start = None
 
            
-                if self.state == STATE_ACTIVE:
+                if self.state in [STATE_ACTIVE, STATE_TUNER]:
                     raw_audio = self.mic.get_data()
-                  
                     peak_hz = self.analyzer.get_dominant_frequency(raw_audio)
-
-
-                    if peak_hz is not None:
-                        if (now - self.last_lcd_update) > LCD_UPDATE_RATE:
-                            self.display.display_freq(peak_hz)
-                            self.last_lcd_update = now
-                            
-                           
-                            if peak_hz > 0:
-                                self.last_sound_time = now
-    
-    
-                        
-                      
-                        silence_duration = now - self.last_sound_time
-                        if silence_duration >= NOISE_TIMEOUT:
-                            self.display.show_message("Sleep time :p\n Goodbye!")
-                            time.sleep(3)
-                            self.cleanup()
-                    else:
+                
+                   
+                    if peak_hz > 0:
                         self.last_sound_time = now
                 
+                    if (now - self.last_lcd_update) > LCD_UPDATE_RATE:
+                       
+                        note, octave, error = self.analyzer.get_closest_pitch(peak_hz)
+                        
+                        if self.state == STATE_ACTIVE:
+                            self.display.show_message(f"{peak_hz:.1f}Hz\nPitch: {note}{octave}")
+                        else:
+                            quality = "In Tune!" if abs(error) < 5 else ("Sharp" if error > 0 else "Flat")
+                            self.display.show_message(f"Note: {note}{octave}\n{quality} ({error})")
+                        
+                        self.last_lcd_update = now
+                
+                    
+                    silence_duration = now - self.last_sound_time
+                    if silence_duration >= NOISE_TIMEOUT:
+                        self.display.show_message("Goodbye! :) \nZzzzz")
+                        time.sleep(2)
+                        self.toggle_state() 
+                else:
+                    self.last_sound_time = now 
+                
                 time.sleep(0.02)
+               
         except Exception as e:
             print(f"Error: {e}")
             self.cleanup()
+            
+            
         except KeyboardInterrupt:
             self.cleanup()
+            
+            
     def cleanup(self):
         """ Safe shutdown of all hardware """
         self.running = False
