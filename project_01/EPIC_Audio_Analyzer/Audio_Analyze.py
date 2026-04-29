@@ -76,7 +76,7 @@ class AudioAnalyzer:
         
 
     def get_closest_pitch(self, freq):
-        if freq <= 20: 
+        if freq <= 50: 
             return "None", 0, 0
             
         n = 12 * np.log2(freq / 440.0)
