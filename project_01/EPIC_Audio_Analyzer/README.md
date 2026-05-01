@@ -37,3 +37,6 @@ and load them onto your EPIC_Audio_Analyzer directory/folder.
 After making sure all the python folders are installed in the same directory/folder, change into the EPIC_Audio_Analyzer directory/folder.
 
 Run: python3 main.py and Enjoy!
+
+**One important note**
+In order to change the rate at which the LCD updates, please see the constant "LCD_UPDATE_RATE". The time input is in seconds.
