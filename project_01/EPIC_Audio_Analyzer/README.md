@@ -38,5 +38,6 @@ After making sure all the python folders are installed in the same directory/fol
 
 Run: python3 main.py and Enjoy!
 
-**One important note**
+**One important note:**
+
 In order to change the rate at which the LCD updates, please see the constant "LCD_UPDATE_RATE". The time input is in seconds.
