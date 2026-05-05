@@ -1,0 +1,9992 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "69ba311f-74cc-4810-9658-ea17ce43f9e6")
+	(paper "User" 431.8 279.4)
+	(title_block
+		(title "Nicholas Melendez EtchASketch Schematic")
+		(date "2026-05-03")
+	)
+	(lib_symbols
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_292303-1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at -7.62 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" ""
+				(at -7.62 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Nicholas_Melendez_EtchASketch:TE_292303-1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "CONN USB RECEPT R/A TYPE A 4POS https://pricing.snapeda.com/parts/292303-1/TE%20Connectivity/view-part?ref=eda Check availability"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_292303-1_1_0"
+				(polyline
+					(pts
+						(xy -7.62 7.62) (xy 7.62 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -10.16) (xy -7.62 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 7.62) (xy 7.62 -10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -10.16) (xy -7.62 -10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -12.7 5.08 0)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "DM"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "DP"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "SH1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 -7.62 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "SH2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_CGND"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#SUPPLY"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 -3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_CGND_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -3.81 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy -1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 2.54 270)
+					(length 2.54)
+					(name "CGND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_FIDUCIAL"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FUD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Nicholas_Melendez_EtchASketch:FIDUCIAL_40MIL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_FIDUCIAL_1_0"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin no_connect line
+					(at 0 0 0)
+					(length 0)
+					(name "P$1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "P$1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#GND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at -2.54 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "SUPPLY SYMBOL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_GND_1_0"
+				(polyline
+					(pts
+						(xy -1.905 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 2.54 270)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_LED"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at -2.54 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.0795)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at -2.54 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.0795)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Nicholas_Melendez_EtchASketch:EIA-STD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "EIA-STD LED, LTST-C191TBKT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_LED_1_0"
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.524) (xy 1.778 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 1.27) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -2.54) (xy 1.016 -2.286) (xy 1.524 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.286) (xy 1.778 -2.032) (xy 2.286 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "ANODE"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "ANODE"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "CATHODE"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "CATHODE"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_MOUNTING_HOLE"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "MGT"
+				(at 0.762 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.0795)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Nicholas_Melendez_EtchASketch:MOUNTING_HOLE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Chassis Mounting Hole w/GND connection ability"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_MOUNTING_HOLE_1_0"
+				(circle
+					(center 0 2.54)
+					(radius 2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -5.08 90)
+					(length 5.08)
+					(name "P$1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "P$1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_POCKETBEAGLE"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 160.02 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" ""
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Nicholas_Melendez_EtchASketch:POCKETBEAGLE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_POCKETBEAGLE_1_0"
+				(polyline
+					(pts
+						(xy 0 157.48) (xy 25.4 157.48)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 86.36) (xy 0 157.48)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 86.36) (xy 50.8 86.36)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 58.42) (xy 0 86.36)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 58.42) (xy 25.4 58.42)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 30.48) (xy 0 58.42)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 30.48) (xy 50.8 30.48)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 30.48)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 25.4 157.48) (xy 50.8 157.48)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 25.4 71.12) (xy 25.4 157.48)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 25.4 58.42) (xy 25.4 71.12)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 25.4 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 25.4 0) (xy 25.4 58.42)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 50.8 157.48) (xy 50.8 86.36)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 50.8 86.36) (xy 50.8 71.12)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 50.8 71.12) (xy 25.4 71.12)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 50.8 71.12) (xy 50.8 30.48)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 50.8 30.48) (xy 50.8 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 50.8 0) (xy 25.4 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "CLICK0"
+					(at 12.7 152.4 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify bottom)
+					)
+				)
+				(text "SYS"
+					(at 12.7 81.28 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify bottom)
+					)
+				)
+				(text "USB1"
+					(at 12.7 53.34 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify bottom)
+					)
+				)
+				(text "ANALOG"
+					(at 12.7 25.4 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify bottom)
+					)
+				)
+				(text "P1_24"
+					(at 22.86 147.32 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_23"
+					(at 22.86 144.78 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_28"
+					(at 22.86 139.7 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_26"
+					(at 22.86 137.16 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_30"
+					(at 22.86 132.08 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_32"
+					(at 22.86 129.54 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_29"
+					(at 22.86 124.46 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_25"
+					(at 22.86 121.92 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_27"
+					(at 22.86 119.38 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_31"
+					(at 22.86 116.84 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_35"
+					(at 22.86 109.22 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_34"
+					(at 22.86 106.68 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_33"
+					(at 22.86 104.14 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_36"
+					(at 22.86 99.06 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_21"
+					(at 22.86 93.98 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_22"
+					(at 22.86 91.44 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_26"
+					(at 22.86 78.74 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_12"
+					(at 22.86 73.66 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_01"
+					(at 22.86 68.58 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_14"
+					(at 22.86 63.5 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_16"
+					(at 22.86 60.96 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_03"
+					(at 22.86 50.8 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_05"
+					(at 22.86 48.26 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_07"
+					(at 22.86 45.72 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_09"
+					(at 22.86 43.18 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_11"
+					(at 22.86 40.64 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_13"
+					(at 22.86 38.1 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_15"
+					(at 22.86 35.56 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_18"
+					(at 22.86 22.86 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_17"
+					(at 22.86 20.32 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_19"
+					(at 22.86 17.78 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_21"
+					(at 22.86 15.24 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_23"
+					(at 22.86 12.7 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_25"
+					(at 22.86 10.16 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P1_27"
+					(at 22.86 7.62 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_36"
+					(at 22.86 5.08 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify right bottom)
+					)
+				)
+				(text "P2_13"
+					(at 27.94 147.32 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_14"
+					(at 27.94 144.78 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_09"
+					(at 27.94 139.7 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_11"
+					(at 27.94 137.16 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_07"
+					(at 27.94 132.08 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_05"
+					(at 27.94 129.54 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_08"
+					(at 27.94 124.46 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_12"
+					(at 27.94 121.92 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_10"
+					(at 27.94 119.38 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_06"
+					(at 27.94 116.84 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_02"
+					(at 27.94 109.22 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_03"
+					(at 27.94 106.68 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_04"
+					(at 27.94 104.14 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_01"
+					(at 27.94 99.06 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_16"
+					(at 27.94 93.98 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_15"
+					(at 27.94 91.44 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "Pocket"
+					(at 27.94 81.28 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_20"
+					(at 27.94 63.5 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_19"
+					(at 27.94 60.96 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_24"
+					(at 27.94 58.42 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_22"
+					(at 27.94 55.88 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_18"
+					(at 27.94 53.34 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_10"
+					(at 27.94 50.8 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_06"
+					(at 27.94 48.26 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_04"
+					(at 27.94 45.72 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_02"
+					(at 27.94 43.18 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_08"
+					(at 27.94 40.64 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_20"
+					(at 27.94 38.1 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_17"
+					(at 27.94 35.56 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_33"
+					(at 27.94 22.86 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_32"
+					(at 27.94 20.32 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_30"
+					(at 27.94 17.78 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_31"
+					(at 27.94 15.24 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_34"
+					(at 27.94 12.7 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P2_28"
+					(at 27.94 10.16 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_29"
+					(at 27.94 7.62 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "P1_35"
+					(at 27.94 5.08 0)
+					(effects
+						(font
+							(size 1.778 1.5113)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "Beagle"
+					(at 35.56 76.2 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "CLICK1"
+					(at 38.1 152.4 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify bottom)
+					)
+				)
+				(text "GPIO"
+					(at 38.1 66.04 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify bottom)
+					)
+				)
+				(text "PRU"
+					(at 38.1 25.4 0)
+					(effects
+						(font
+							(size 2.54 2.159)
+						)
+						(justify bottom)
+					)
+				)
+				(pin power_in line
+					(at -5.08 68.58 0)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_01"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 111.76 180)
+					(length 5.08)
+					(name "AIN6(3.3V)GPIO87"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_02"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 50.8 0)
+					(length 5.08)
+					(name "DRVVBUS"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_03"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 104.14 180)
+					(length 5.08)
+					(name "GPIO89"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_04"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 48.26 0)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_05"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 116.84 180)
+					(length 5.08)
+					(name "SPI0.CS"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_06"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 45.72 0)
+					(length 5.08)
+					(name "USB1.VIN"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_07"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 124.46 180)
+					(length 5.08)
+					(name "SPI0.CLK"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_08"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 43.18 0)
+					(length 5.08)
+					(name "USB1.D-"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_09"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 119.38 180)
+					(length 5.08)
+					(name "SPI0.MISO"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_10"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 40.64 0)
+					(length 5.08)
+					(name "USB1.D+"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_11"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 121.92 180)
+					(length 5.08)
+					(name "SPI0.MOSI"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_12"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 38.1 0)
+					(length 5.08)
+					(name "USB1.ID"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_13"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 144.78 180)
+					(length 5.08)
+					(name "3.3V@1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_14"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 35.56 0)
+					(length 5.08)
+					(name "GND@1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_15"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 93.98 180)
+					(length 5.08)
+					(name "GND@2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_16"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 20.32 0)
+					(length 5.08)
+					(name "AIN.VREF-"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_17"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 22.86 0)
+					(length 5.08)
+					(name "AIN.VREF+"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_18"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 17.78 0)
+					(length 5.08)
+					(name "AIN0(1.8V)"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_19"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 63.5 180)
+					(length 5.08)
+					(name "GPIO20"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_20"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 15.24 0)
+					(length 5.08)
+					(name "AIN1(1.8V)"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_21"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 93.98 0)
+					(length 5.08)
+					(name "GND@3"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_22"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 12.7 0)
+					(length 5.08)
+					(name "AIN2(1.8V)"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_23"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 147.32 0)
+					(length 5.08)
+					(name "VOUT@1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_24"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 10.16 0)
+					(length 5.08)
+					(name "AIN3(1.8V)"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_25"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 137.16 0)
+					(length 5.08)
+					(name "I2C2.SDA"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_26"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 7.62 0)
+					(length 5.08)
+					(name "AIN4(1.8V)"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_27"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 139.7 0)
+					(length 5.08)
+					(name "I2C2.SCL"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_28"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 7.62 180)
+					(length 5.08)
+					(name "PRU0.7"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_29"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 132.08 0)
+					(length 5.08)
+					(name "UART0.TX"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_30"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 15.24 180)
+					(length 5.08)
+					(name "PRU0.4"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_31"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 129.54 0)
+					(length 5.08)
+					(name "UART0.RX"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_32"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 22.86 180)
+					(length 5.08)
+					(name "PRU0.1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_33"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 106.68 0)
+					(length 5.08)
+					(name "GPIO26"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_34"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 5.08 180)
+					(length 5.08)
+					(name "PRU1.10"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_35"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 99.06 0)
+					(length 5.08)
+					(name "PWM0A"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P1_36"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 99.06 180)
+					(length 5.08)
+					(name "PWM1A"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_01"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 43.18 180)
+					(length 5.08)
+					(name "GPIO59"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_02"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 106.68 180)
+					(length 5.08)
+					(name "GPIO23"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_03"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 45.72 180)
+					(length 5.08)
+					(name "GPIO58"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_04"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 129.54 180)
+					(length 5.08)
+					(name "UART4.RX"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_05"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 48.26 180)
+					(length 5.08)
+					(name "GPIO57"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_06"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 132.08 180)
+					(length 5.08)
+					(name "UART4.TX"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_07"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 40.64 180)
+					(length 5.08)
+					(name "GPIO60"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_08"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 139.7 180)
+					(length 5.08)
+					(name "I2C1.SCL"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_09"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 50.8 180)
+					(length 5.08)
+					(name "GPIO52"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_10"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 137.16 180)
+					(length 5.08)
+					(name "I2C1.SDA"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_11"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 73.66 0)
+					(length 5.08)
+					(name "PWR.BTN"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_12"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 147.32 180)
+					(length 5.08)
+					(name "VOUT@2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_13"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 63.5 0)
+					(length 5.08)
+					(name "BAT.VIN"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_14"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 91.44 180)
+					(length 5.08)
+					(name "GND@4"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_15"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 60.96 0)
+					(length 5.08)
+					(name "BAT.TEMP"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_16"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 35.56 180)
+					(length 5.08)
+					(name "GPIO65"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_17"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 53.34 180)
+					(length 5.08)
+					(name "GPIO47"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_18"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 60.96 180)
+					(length 5.08)
+					(name "GPIO27"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_19"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 38.1 180)
+					(length 5.08)
+					(name "GPIO64"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_20"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 91.44 0)
+					(length 5.08)
+					(name "GND@5"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_21"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 55.88 180)
+					(length 5.08)
+					(name "GPIO46"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_22"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 144.78 0)
+					(length 5.08)
+					(name "3.3V@2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_23"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 58.42 180)
+					(length 5.08)
+					(name "GPIO44"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_24"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 121.92 0)
+					(length 5.08)
+					(name "SPI1.MOSI"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_25"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 78.74 0)
+					(length 5.08)
+					(name "RESET#"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_26"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 119.38 0)
+					(length 5.08)
+					(name "SPI1.MISO"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_27"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 10.16 180)
+					(length 5.08)
+					(name "PRU0.6"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_28"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 124.46 0)
+					(length 5.08)
+					(name "SPI1.CLK"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_29"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 17.78 180)
+					(length 5.08)
+					(name "PRU0.3"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_30"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 116.84 0)
+					(length 5.08)
+					(name "SPI1.CS"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_31"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 20.32 180)
+					(length 5.08)
+					(name "PRU0.2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_32"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 104.14 0)
+					(length 5.08)
+					(name "GPIO45"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_33"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 55.88 12.7 180)
+					(length 5.08)
+					(name "PRU0.5"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_34"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 111.76 0)
+					(length 5.08)
+					(name "AIN5(3.3V)GPIO86"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_35"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 5.08 0)
+					(length 5.08)
+					(name "AIN7(1.8V)"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "P2_36"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_POTENTIOMETER"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at -12.7 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at -12.7 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Nicholas_Melendez_EtchASketch:POT-PO90S"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Potentiometer - Examples:     P090S-14T20BR10K (987-1277-ND)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_POTENTIOMETER_1_0"
+				(polyline
+					(pts
+						(xy -1.016 1.524) (xy 1.016 0.889)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 0.254) (xy 1.016 -0.381)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -1.016) (xy 1.016 -1.651)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 1.016 2.159)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 2.159) (xy -1.016 1.524)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0.889) (xy -1.016 0.254)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -0.381) (xy -1.016 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.651) (xy -1.016 -2.286)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 2.54 -0.635) (xy 2.54 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "CCW"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "CCW"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "CW"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "CW"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_PUSH_BUTTON"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at -7.62 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at -7.62 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Nicholas_Melendez_EtchASketch:BUTTON_12.5MM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_PUSH_BUTTON_1_0"
+				(polyline
+					(pts
+						(xy -7.62 5.08) (xy -7.62 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -5.08) (xy 7.62 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 1.27) (xy -5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -5.08 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_R_R0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at -2.54 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at -2.54 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Nicholas_Melendez_EtchASketch:R0603"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "RESISTOR, American symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_R_R0603_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.159 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.159 1.016) (xy -1.524 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -1.016) (xy -0.889 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.889 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -1.016) (xy 0.381 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.381 1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.016) (xy 1.651 1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.651 1.016) (xy 2.286 -1.016)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.016) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.2032)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_SCREEN"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Nicholas_Melendez_EtchASketch:SCREEN"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_SCREEN_1_0"
+				(polyline
+					(pts
+						(xy 0 27.94) (xy 17.78 27.94)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 27.94)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 17.78 27.94) (xy 17.78 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 17.78 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 20.32 0)
+					(length 5.08)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "CLK"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 12.7 0)
+					(length 5.08)
+					(name "CS"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "CS"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 10.16 0)
+					(length 5.08)
+					(name "DC"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "DC"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 5.08 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "GND"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 17.78 0)
+					(length 5.08)
+					(name "MISO"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "MISO"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 15.24 0)
+					(length 5.08)
+					(name "MOSI"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "MOSI"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 7.62 0)
+					(length 5.08)
+					(name "RST"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "RST"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 22.86 0)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+					(number "VIN"
+						(effects
+							(font
+								(size 1.524 1.524)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_1P8V"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#SUPPLY"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_VDD_1P8V_1_0"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "VDD_1P8V"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_3P3V"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#SUPPLY"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_VDD_3P3V_1_0"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "VDD_3P3V"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_5V"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#SUPPLY"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Etch_A_Sketch_VDD_5V_1_0"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "VDD_5V"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "LEDs"
+		(exclude_from_sim no)
+		(at 352.044 143.256 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f3a61d4-82e0-4b47-8445-7a11600ce0bd")
+	)
+	(text "Buttons"
+		(exclude_from_sim no)
+		(at 195.834 171.704 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left bottom)
+		)
+		(uuid "5398e18c-9cca-4c9d-a8f6-43fd6ebcf4c5")
+	)
+	(text "SPI Display"
+		(exclude_from_sim no)
+		(at 334.518 66.294 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left bottom)
+		)
+		(uuid "8a060cd5-ab14-4779-8b56-4c9a3eb98d93")
+	)
+	(text "PocketBeagle"
+		(exclude_from_sim no)
+		(at 51.054 24.638 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left bottom)
+		)
+		(uuid "8aa00d3f-389c-4016-a442-abea8eb9df74")
+	)
+	(text "USB Host"
+		(exclude_from_sim no)
+		(at 59.182 220.472 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6a8e9e1-ff5f-4f60-b0f4-333432ced801")
+	)
+	(text "Potentiometers"
+		(exclude_from_sim no)
+		(at 184.15 105.664 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left bottom)
+		)
+		(uuid "e8a4fa5a-c65f-4ead-961a-1ded344a588f")
+	)
+	(text "Mechanicals"
+		(exclude_from_sim no)
+		(at 191.008 35.306 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left bottom)
+		)
+		(uuid "fcc384d0-f24c-4b7f-b579-b857cb34c4d5")
+	)
+	(junction
+		(at 231.14 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "076a9ba2-7101-4f63-89c2-14034ecc32b1")
+	)
+	(junction
+		(at 186.69 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d2b1391-0b66-46ce-8c73-4ef3583eba8e")
+	)
+	(junction
+		(at 176.53 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "258046b5-96a7-4da3-b953-2038dbb8f9f3")
+	)
+	(junction
+		(at 205.74 196.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f9b5737-49af-49c8-b203-d2ecf2789250")
+	)
+	(junction
+		(at 166.37 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55a1553e-d56a-4710-87a8-a1256051b3cf")
+	)
+	(junction
+		(at 198.12 240.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63c8019a-6799-4321-b50c-6b67df7400e4")
+	)
+	(junction
+		(at 46.99 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e361c18-13bc-4610-9a05-94a6c53a1383")
+	)
+	(junction
+		(at 205.74 242.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d9b98b2-5fa5-4bde-9fce-e12607da5b6b")
+	)
+	(junction
+		(at 107.95 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa8248a8-7eb1-441c-be4a-4b1327307f4e")
+	)
+	(junction
+		(at 238.76 201.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd43e556-d089-4a88-996f-8b513b016b70")
+	)
+	(junction
+		(at 213.36 196.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dee2219a-a911-4cd4-9d82-29b6af5d4ee9")
+	)
+	(junction
+		(at 36.83 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb823eca-c2c5-43d1-9871-3933d390fd4c")
+	)
+	(wire
+		(pts
+			(xy 77.47 241.3) (xy 72.39 241.3)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0365dd1b-23f1-4c16-9fa2-0df91b3b5f62")
+	)
+	(wire
+		(pts
+			(xy 46.99 179.07) (xy 41.91 179.07)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "05db25ec-ebf1-4bd1-9373-463d25462ce1")
+	)
+	(wire
+		(pts
+			(xy 166.37 59.69) (xy 166.37 57.15)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "06906804-9cbb-4bcb-8a86-1177a69064d6")
+	)
+	(wire
+		(pts
+			(xy 270.51 49.53) (xy 270.51 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0958f76c-03ef-4896-8f5b-e1a68dc685c3")
+	)
+	(wire
+		(pts
+			(xy 198.12 240.03) (xy 185.42 240.03)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0b67ab25-0725-4080-8aa5-9a4c42873c48")
+	)
+	(wire
+		(pts
+			(xy 107.95 138.43) (xy 115.57 138.43)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0d4b75bb-0be7-4d64-b1db-629ebe1535e9")
+	)
+	(wire
+		(pts
+			(xy 46.99 156.21) (xy 41.91 156.21)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0f813c69-4ad3-42ce-a1e3-ecdbb906b29a")
+	)
+	(wire
+		(pts
+			(xy 238.76 204.47) (xy 248.92 204.47)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "1276881f-470b-4493-839f-ab597d6989c9")
+	)
+	(wire
+		(pts
+			(xy 46.99 80.01) (xy 36.83 80.01)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "17c99e4a-82c8-4bdf-82ad-0a8ccc2f12b7")
+	)
+	(wire
+		(pts
+			(xy 372.11 218.44) (xy 372.11 220.98)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "1a387269-ff48-4263-b5f0-af5b5abfc9ef")
+	)
+	(wire
+		(pts
+			(xy 349.25 100.33) (xy 336.55 100.33)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "1a860270-485b-4794-8cdd-62b28a87d8c4")
+	)
+	(wire
+		(pts
+			(xy 241.3 250.19) (xy 241.3 247.65)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "1d9d7346-3f0b-4a45-81e1-a2fdc5608f82")
+	)
+	(wire
+		(pts
+			(xy 205.74 242.57) (xy 205.74 240.03)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "219842c1-d934-4a0d-bd21-13b04f3c9b80")
+	)
+	(wire
+		(pts
+			(xy 251.46 142.24) (xy 261.62 142.24)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "26401889-273e-4e17-93dc-42d13ea835f1")
+	)
+	(wire
+		(pts
+			(xy 349.25 92.71) (xy 336.55 92.71)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "26c75da0-f1e5-41ad-9115-6ae0d70759ac")
+	)
+	(wire
+		(pts
+			(xy 46.99 181.61) (xy 41.91 181.61)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "27198a8f-b5b0-4583-a58d-9db8d75c5543")
+	)
+	(wire
+		(pts
+			(xy 349.25 105.41) (xy 336.55 105.41)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "27db45c4-e05d-4537-b4b5-e1db5e1cc825")
+	)
+	(wire
+		(pts
+			(xy 46.99 153.67) (xy 41.91 153.67)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "2e0478ed-1fc6-4426-9c06-db83e9e238f1")
+	)
+	(wire
+		(pts
+			(xy 36.83 161.29) (xy 36.83 105.41)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "2e63f825-c2c2-4e7d-a6aa-270cfd3ef543")
+	)
+	(wire
+		(pts
+			(xy 172.72 142.24) (xy 172.72 144.78)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "33c54287-ceb4-4861-9672-deb3776fd991")
+	)
+	(wire
+		(pts
+			(xy 198.12 229.87) (xy 198.12 227.33)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "347bd378-c4ed-4761-9f9e-268c7d4d6ab8")
+	)
+	(wire
+		(pts
+			(xy 46.99 176.53) (xy 31.75 176.53)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "365f8495-ac55-4290-98ff-e5176bdbd6e0")
+	)
+	(wire
+		(pts
+			(xy 349.25 90.17) (xy 341.63 90.17)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3afcb124-dfd3-42a0-806a-b324d1155052")
+	)
+	(wire
+		(pts
+			(xy 77.47 248.92) (xy 74.93 248.92)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "3d1e2c0e-f1c7-488a-b1bc-dabc7aeca34e")
+	)
+	(wire
+		(pts
+			(xy 36.83 52.07) (xy 36.83 41.91)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "419767fe-97aa-43b3-b34d-2bc773e181f7")
+	)
+	(wire
+		(pts
+			(xy 107.95 146.05) (xy 115.57 146.05)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "45620340-d0a9-47ce-af71-42555a0f247e")
+	)
+	(wire
+		(pts
+			(xy 341.63 107.95) (xy 341.63 110.49)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "47cf1eac-ed77-42f7-b008-eb232730002c")
+	)
+	(wire
+		(pts
+			(xy 166.37 59.69) (xy 176.53 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "48121d33-0f79-494a-891b-0f36e2b56f58")
+	)
+	(wire
+		(pts
+			(xy 243.84 129.54) (xy 251.46 129.54)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "48c3344c-3738-49ef-ab67-d74c2da579ca")
+	)
+	(wire
+		(pts
+			(xy 205.74 247.65) (xy 205.74 242.57)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "4bd044eb-6685-476a-91cf-98a10602833e")
+	)
+	(wire
+		(pts
+			(xy 356.87 218.44) (xy 351.79 218.44)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "4e7110d7-d638-4e6d-ba9c-def7c9a0e12b")
+	)
+	(wire
+		(pts
+			(xy 349.25 95.25) (xy 336.55 95.25)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5471c942-8711-4521-9a9b-f667e711a25f")
+	)
+	(wire
+		(pts
+			(xy 364.49 190.5) (xy 372.11 190.5)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "55f5dcb2-077e-4e67-8690-a8c92c325fa9")
+	)
+	(wire
+		(pts
+			(xy 341.63 90.17) (xy 341.63 85.09)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "574efc4f-d597-4763-8249-60b68d668122")
+	)
+	(wire
+		(pts
+			(xy 107.95 102.87) (xy 107.95 105.41)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "58de3db3-fb23-4c09-82db-d7f3a08f631f")
+	)
+	(wire
+		(pts
+			(xy 46.99 74.93) (xy 36.83 74.93)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "59c5ed94-4bd0-4dee-b17f-b895daa39f16")
+	)
+	(wire
+		(pts
+			(xy 238.76 196.85) (xy 238.76 201.93)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5b2ba848-f508-4ed4-8f7f-1ef7ea639ef2")
+	)
+	(wire
+		(pts
+			(xy 77.47 238.76) (xy 72.39 238.76)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5c482e22-7cfc-4dd9-a8f4-e3f82af1e26a")
+	)
+	(wire
+		(pts
+			(xy 172.72 132.08) (xy 172.72 129.54)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "633ceb94-7b1a-4988-9349-26ccfa49bd74")
+	)
+	(wire
+		(pts
+			(xy 356.87 190.5) (xy 346.71 190.5)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "6ab3dec4-ab62-4de9-bb9c-8b13a423a579")
+	)
+	(wire
+		(pts
+			(xy 349.25 97.79) (xy 336.55 97.79)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "706a6e32-f323-4baa-a465-fce6f7bb4822")
+	)
+	(wire
+		(pts
+			(xy 72.39 236.22) (xy 77.47 236.22)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "744b01f9-fd53-4dda-8591-d225dbe16c82")
+	)
+	(wire
+		(pts
+			(xy 36.83 163.83) (xy 36.83 161.29)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "786711f1-7382-46eb-97d7-75d14a76da3c")
+	)
+	(wire
+		(pts
+			(xy 205.74 196.85) (xy 193.04 196.85)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "79cb3dfe-6a1b-4143-9014-9a0795bb6046")
+	)
+	(wire
+		(pts
+			(xy 372.11 190.5) (xy 372.11 193.04)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "7a6f3af9-ac86-4cc7-afe5-ca6ab4eb5687")
+	)
+	(wire
+		(pts
+			(xy 46.99 90.17) (xy 39.37 90.17)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "7a878201-9bd1-4e67-819f-834ed3bdff54")
+	)
+	(wire
+		(pts
+			(xy 172.72 129.54) (xy 165.1 129.54)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "7c168a68-37b6-4609-8cf6-8dac9ed0325e")
+	)
+	(wire
+		(pts
+			(xy 107.95 143.51) (xy 118.11 143.51)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "8154bcf3-6407-407a-854b-20cc95ac09a6")
+	)
+	(wire
+		(pts
+			(xy 205.74 186.69) (xy 205.74 184.15)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "81566b26-defa-4876-8143-f5c5d5cf982b")
+	)
+	(wire
+		(pts
+			(xy 186.69 59.69) (xy 186.69 57.15)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "820ed910-a547-4a46-a694-5c972a4e2ca0")
+	)
+	(wire
+		(pts
+			(xy 46.99 171.45) (xy 44.45 171.45)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "858406e8-8101-4ad2-b22e-281e3de80443")
+	)
+	(wire
+		(pts
+			(xy 251.46 129.54) (xy 251.46 132.08)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "861c2fa1-9e98-4cb2-a9af-88a9fe32fc66")
+	)
+	(wire
+		(pts
+			(xy 107.95 148.59) (xy 115.57 148.59)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "87bb8735-b145-47d6-857a-0d5f8aebb1c8")
+	)
+	(wire
+		(pts
+			(xy 118.11 36.83) (xy 118.11 52.07)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9066dd9a-e198-4850-ba65-8ff454921a77")
+	)
+	(wire
+		(pts
+			(xy 241.3 247.65) (xy 231.14 247.65)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9a38d0d6-dbd8-4c89-b4b5-ba09b16666db")
+	)
+	(wire
+		(pts
+			(xy 172.72 144.78) (xy 182.88 144.78)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9c4bfea8-22c8-49ea-bbdd-3438264383b9")
+	)
+	(wire
+		(pts
+			(xy 349.25 107.95) (xy 341.63 107.95)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9cc05583-95fb-4d76-9dcb-4d54178705a2")
+	)
+	(wire
+		(pts
+			(xy 72.39 233.68) (xy 72.39 236.22)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9e050c54-873b-40cc-9f2b-97c8c4911d89")
+	)
+	(wire
+		(pts
+			(xy 107.95 49.53) (xy 107.95 41.91)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "9f5561df-f775-4b2b-83da-f807edf00b0b")
+	)
+	(wire
+		(pts
+			(xy 367.03 160.02) (xy 372.11 160.02)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "a2915e3e-f5d4-422d-a1f7-01cef70790e0")
+	)
+	(wire
+		(pts
+			(xy 261.62 142.24) (xy 261.62 144.78)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "a320f124-5e63-4904-aba3-2d6f8f3fd3dd")
+	)
+	(wire
+		(pts
+			(xy 36.83 105.41) (xy 46.99 105.41)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "a350b0f3-a71e-433c-8d99-9e3264bb2d97")
+	)
+	(wire
+		(pts
+			(xy 156.21 59.69) (xy 166.37 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "a703fd61-2afb-4129-adda-e5c2cff69ec0")
+	)
+	(wire
+		(pts
+			(xy 364.49 218.44) (xy 372.11 218.44)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "aa2bb2bd-2c90-45a1-8f32-98d68b5220e3")
+	)
+	(wire
+		(pts
+			(xy 107.95 92.71) (xy 118.11 92.71)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "aa6239ec-6d0b-497b-a52c-88208def6b1e")
+	)
+	(wire
+		(pts
+			(xy 177.8 137.16) (xy 187.96 137.16)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ac19d439-2c88-4b3e-a6c6-8487716c6aca")
+	)
+	(wire
+		(pts
+			(xy 213.36 196.85) (xy 205.74 196.85)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ac6517c3-820f-4c2d-9ea7-416371220e7e")
+	)
+	(wire
+		(pts
+			(xy 46.99 72.39) (xy 36.83 72.39)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "ae9ed6c7-d2cd-47a1-b28a-13a018286de4")
+	)
+	(wire
+		(pts
+			(xy 36.83 161.29) (xy 46.99 161.29)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b31cfce1-08ed-4537-b7f3-bf59b30ab80a")
+	)
+	(wire
+		(pts
+			(xy 156.21 57.15) (xy 156.21 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b79d742a-2b2b-4876-ab75-2e2748a4ff5e")
+	)
+	(wire
+		(pts
+			(xy 67.31 243.84) (xy 77.47 243.84)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "bca908a1-739f-46ab-bf7c-6e4517d80f76")
+	)
+	(wire
+		(pts
+			(xy 349.25 102.87) (xy 336.55 102.87)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "bdeea81c-8926-44ec-8617-9a012a2221d9")
+	)
+	(wire
+		(pts
+			(xy 107.95 135.89) (xy 115.57 135.89)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "bf07b643-88e6-4c28-966a-06b5e8b56b37")
+	)
+	(wire
+		(pts
+			(xy 176.53 59.69) (xy 176.53 57.15)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c0c32dd3-adce-4d30-a298-34d870948009")
+	)
+	(wire
+		(pts
+			(xy 46.99 52.07) (xy 36.83 52.07)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c2b99d00-dc0a-4a50-892d-3957623b26ce")
+	)
+	(wire
+		(pts
+			(xy 256.54 137.16) (xy 266.7 137.16)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c3feff0d-0a43-484a-a3da-26ecf9708652")
+	)
+	(wire
+		(pts
+			(xy 205.74 240.03) (xy 198.12 240.03)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c421180d-31db-4c0c-bab2-08d6c2f3347c")
+	)
+	(wire
+		(pts
+			(xy 113.03 110.49) (xy 113.03 105.41)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c71c5d74-61e0-4b39-bf24-a64fcb5aa240")
+	)
+	(wire
+		(pts
+			(xy 46.99 173.99) (xy 46.99 171.45)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "c920daf8-c080-4413-8cc2-1738d09b5a4a")
+	)
+	(wire
+		(pts
+			(xy 250.19 59.69) (xy 250.19 49.53)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d1966088-1ccf-4b13-9112-c005b3391565")
+	)
+	(wire
+		(pts
+			(xy 46.99 77.47) (xy 36.83 77.47)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d69e7cdd-650e-4863-867e-3f82b0f3e094")
+	)
+	(wire
+		(pts
+			(xy 250.19 49.53) (xy 255.27 49.53)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d744a90a-089e-43f0-89e7-d70df9385417")
+	)
+	(wire
+		(pts
+			(xy 46.99 102.87) (xy 46.99 105.41)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d9321567-bc08-4b88-a9fe-6339c03fae4c")
+	)
+	(wire
+		(pts
+			(xy 238.76 201.93) (xy 238.76 204.47)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "d97fd829-1abd-4433-845b-5fb2cad7ad21")
+	)
+	(wire
+		(pts
+			(xy 113.03 105.41) (xy 107.95 105.41)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "daf5bb38-aa5b-4b0e-86f4-83d44ade017d")
+	)
+	(wire
+		(pts
+			(xy 46.99 39.37) (xy 46.99 49.53)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "db382351-db76-41d4-bf8a-6bbac7ed5888")
+	)
+	(wire
+		(pts
+			(xy 213.36 201.93) (xy 213.36 196.85)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "dcb3bdbe-d540-4657-ad4b-bded2918546f")
+	)
+	(wire
+		(pts
+			(xy 176.53 59.69) (xy 186.69 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e0616f84-9b26-4bba-8d85-f9698a02fe01")
+	)
+	(wire
+		(pts
+			(xy 359.41 160.02) (xy 354.33 160.02)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e37d7219-3917-4b0f-8ef7-dcfb41957a4c")
+	)
+	(wire
+		(pts
+			(xy 231.14 242.57) (xy 231.14 247.65)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "e968ae6e-bebc-4305-85a1-f35293e5a84e")
+	)
+	(wire
+		(pts
+			(xy 118.11 52.07) (xy 107.95 52.07)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "eecbb175-529a-42e9-8270-996fe693b30e")
+	)
+	(wire
+		(pts
+			(xy 265.43 49.53) (xy 270.51 49.53)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "f0aa1556-fd15-4d2b-b670-e54b35df3680")
+	)
+	(label "DC"
+		(at 336.55 102.87 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "03d278d1-8d69-430e-a15a-4f16613e4e95")
+	)
+	(label "DM"
+		(at 72.39 238.76 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c956ef4-97c8-4799-8d1f-fcc326c14411")
+	)
+	(label "MISO"
+		(at 336.55 95.25 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "1aa2f9a7-1906-4189-b55e-5da24ebf7f44")
+	)
+	(label "GREEN_LED"
+		(at 113.03 146.05 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "21522030-2e3c-45d4-9bd6-a93bd71858b1")
+	)
+	(label "ANALOG_GND"
+		(at 31.75 176.53 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "240d524f-d706-4e41-9e63-e23b868dc319")
+	)
+	(label "RST"
+		(at 336.55 105.41 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "27172fa5-b129-4c3a-a35d-c662b16ab2cb")
+	)
+	(label "RED_LED"
+		(at 113.03 148.59 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "2866abd8-7b54-4b53-a1f6-2edac8116e5c")
+	)
+	(label "CS"
+		(at 336.55 100.33 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d1ff586-91d5-47de-897a-7123f35fcd2b")
+	)
+	(label "BLUE_LED"
+		(at 354.33 160.02 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "40953d60-39a8-4d27-a9e1-3fda0fb6dd89")
+	)
+	(label "DM"
+		(at 41.91 153.67 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f182936-c354-4cce-a7df-eff77b855692")
+	)
+	(label "DP"
+		(at 41.91 156.21 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "4f7a4472-ce2a-4a80-8337-0e99d3dc7cf1")
+	)
+	(label "BLUE_LED"
+		(at 113.03 143.51 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "5beeb4e3-d9ac-4d68-9265-abdf4220a66a")
+	)
+	(label "POT_2"
+		(at 261.62 137.16 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e53ac5e-8ac4-430d-a75b-c09176017fc4")
+	)
+	(label "BUTTON_2"
+		(at 39.37 90.17 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a5a2254-0ce7-498c-a748-8832a71aaa44")
+	)
+	(label "ANALOG_GND"
+		(at 177.8 144.78 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "8799fa22-bff5-4d28-8c3f-d8041216953f")
+	)
+	(label "MISO"
+		(at 36.83 77.47 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d597d9c-fa2a-420c-af5b-a4816e68b71c")
+	)
+	(label "CS"
+		(at 36.83 80.01 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "8df11b27-f687-4775-89c8-48611da2b6f3")
+	)
+	(label "BUTTON_1"
+		(at 113.03 92.71 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "90965a2c-d55a-4704-b28c-496b209b2f1b")
+	)
+	(label "POT_1"
+		(at 177.8 137.16 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "91626554-1b4a-4170-ae5a-f1ad59c3e1eb")
+	)
+	(label "ANALOG_GND"
+		(at 261.62 144.78 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "9fd38191-4247-4013-aee9-91083739d9dd")
+	)
+	(label "RST"
+		(at 113.03 135.89 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "a89a7210-a9f8-45ac-9b8c-00891585da6b")
+	)
+	(label "BUTTON_1"
+		(at 193.04 196.85 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab8a7f19-4c01-4d3d-9478-c43d7f2310f1")
+	)
+	(label "BUTTON_2"
+		(at 185.42 240.03 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0cbb0ce-4e27-4763-96a7-3c212ab24588")
+	)
+	(label "CGND"
+		(at 74.93 248.92 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3ae0406-289e-4e11-a5ce-adbdcd90b9ab")
+	)
+	(label "RED_LED"
+		(at 351.79 218.44 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb30a03f-74eb-4e7c-9c61-6089c683afad")
+	)
+	(label "DC"
+		(at 113.03 138.43 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6e9b25a-bbf7-41f0-b813-c96cf3affef4")
+	)
+	(label "CLK"
+		(at 336.55 92.71 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb2fb3c7-d92e-4224-ab0b-928f85f70d7f")
+	)
+	(label "POT_1"
+		(at 41.91 179.07 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd927dd2-af77-400b-a2d2-24585d04b372")
+	)
+	(label "DP"
+		(at 72.39 241.3 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5803ded-8687-424a-9dbe-50194a02fab6")
+	)
+	(label "MOSI"
+		(at 36.83 74.93 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "de294189-e293-4c8b-908f-eae04834120b")
+	)
+	(label "MOSI"
+		(at 336.55 97.79 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "eca0f0fa-6d64-4a54-9146-1e3ea8e09404")
+	)
+	(label "CLK"
+		(at 36.83 72.39 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "f2870e1f-fbeb-48f4-aaaa-6b68765fc3cd")
+	)
+	(label "GREEN_LED"
+		(at 346.71 190.5 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "f52dd22e-a4fc-4c12-82b0-0aac1a126295")
+	)
+	(label "POT_2"
+		(at 41.91 181.61 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "f847c28c-7e8c-435c-98cf-d458fa1da415")
+	)
+	(global_label "BAT.VIN"
+		(shape bidirectional)
+		(at 46.99 133.35 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "6809a79d-1e93-46ab-a793-4dcfb04c5f90")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1492 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VIN"
+		(shape bidirectional)
+		(at 46.99 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right)
+		)
+		(uuid "9b5fc22e-81e9-459d-bdda-79c6c52c28b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.294 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND")
+		(at 341.63 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "03755488-b03f-43ee-9fa1-9777f52eef5c")
+		(property "Reference" "#GND020"
+			(at 341.63 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 339.09 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 341.63 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 341.63 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 341.63 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc80bf0a-a8d8-4e58-9c11-586ef6a2526d")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#GND020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_LED")
+		(at 359.41 218.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "125179b5-06d2-4842-9017-ce049900a09c")
+		(property "Reference" "D5"
+			(at 356.87 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "RED_LED"
+			(at 354.33 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:EIA-STD"
+			(at 359.41 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 359.41 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "ANODE"
+			(uuid "e2238117-d9f3-43b5-8fc6-b0032382fdbb")
+		)
+		(pin "CATHODE"
+			(uuid "51bf230e-0e33-45ba-809e-e2cab70bbbff")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_MOUNTING_HOLE")
+		(at 176.53 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "18fefb09-643f-487a-a005-40bafac7f289")
+		(property "Reference" "MGT7"
+			(at 177.292 54.102 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "MOUNTING_HOLE"
+			(at 176.53 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:MOUNTING_HOLE"
+			(at 176.53 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 176.53 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P$1"
+			(uuid "d609b05c-6ff3-419e-9ec3-19cfe33c7f78")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "MGT7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_1P8V")
+		(at 44.45 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "234de479-81c5-4d7f-bda1-72a335265317")
+		(property "Reference" "#SUPPLY015"
+			(at 44.45 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_1P8V"
+			(at 44.45 164.846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94c0626c-69f7-4ff2-968e-61d97d446068")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND")
+		(at 248.92 207.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "249be171-a881-4ec3-b8a6-fc97bc3da537")
+		(property "Reference" "#GND019"
+			(at 248.92 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 248.92 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 248.92 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10abad50-ce50-448d-99a9-c181f0179b79")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#GND019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_POTENTIOMETER")
+		(at 251.46 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "25fd0470-487d-448c-bae4-a3f59c963940")
+		(property "Reference" "R8"
+			(at 246.38 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "POTENTIOMETER"
+			(at 254 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:POT-PO90S"
+			(at 251.46 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 251.46 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "CCW"
+			(uuid "e77c1d52-dd8f-4815-a605-f3caf41ac6d7")
+		)
+		(pin "S"
+			(uuid "94469f6d-3b92-44b8-af14-206ed99892c4")
+		)
+		(pin "CW"
+			(uuid "a2f6763b-4454-47ad-b36a-9f1279dad4d2")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_PUSH_BUTTON")
+		(at 226.06 199.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "26c03745-dbf6-4d28-aa21-f9e1aa437ebe")
+		(property "Reference" "SW4"
+			(at 218.44 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PUSH_BUTTON"
+			(at 218.44 207.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:BUTTON_12.5MM"
+			(at 226.06 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 226.06 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "382eae7d-d747-4820-958a-f4bd1226b6e0")
+		)
+		(pin "4"
+			(uuid "a08b7646-c05e-46a4-b0cd-570f080ecc70")
+		)
+		(pin "1"
+			(uuid "9b619507-1889-47db-9cda-d8f46e062d06")
+		)
+		(pin "2"
+			(uuid "4bf99df2-829b-4708-9e31-3582eb79fefb")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_R_R0603")
+		(at 205.74 191.77 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "28445cd0-3745-4f66-9ad7-2a31b66c6e12")
+		(property "Reference" "R10"
+			(at 203.2 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1k"
+			(at 203.2 189.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:R0603"
+			(at 205.74 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205.74 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d3228cb6-4335-45ed-b2fc-2aa7150a65e4")
+		)
+		(pin "2"
+			(uuid "4c4d21df-45a5-4b25-94e7-c0506e98846e")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_292303-1")
+		(at 90.17 241.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d020dcd-da70-4203-ae55-b34f750ed713")
+		(property "Reference" "USBPORT1"
+			(at 82.55 231.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "292303-1"
+			(at 82.55 254 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:TE_292303-1"
+			(at 90.17 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 90.17 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "e01a4d3c-2e37-4939-b825-8894ff6c3c65")
+		)
+		(pin "SH2"
+			(uuid "dbb7455a-8cda-4d83-b35e-b6a4bb3e5157")
+		)
+		(pin "2"
+			(uuid "fe5a65ea-2ab7-413b-aa3f-63e409c99e53")
+		)
+		(pin "1"
+			(uuid "56ecef24-9973-4fa9-8a56-d2ae8780f53e")
+		)
+		(pin "SH1"
+			(uuid "77808e89-758e-43b5-bb5e-4e23e5f6d6c2")
+		)
+		(pin "4"
+			(uuid "1a882107-8b09-4f03-bc97-1d29793a8426")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "USBPORT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_3P3V")
+		(at 341.63 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2f3ee843-379e-40e8-97b1-860dfbc5a880")
+		(property "Reference" "#SUPPLY026"
+			(at 341.63 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_3P3V"
+			(at 341.63 78.486 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 341.63 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 341.63 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 341.63 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "02f32935-9aa3-452e-9a86-ca99068292cb")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_MOUNTING_HOLE")
+		(at 186.69 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3823348c-f264-49e7-ae50-c5ff2887cd7a")
+		(property "Reference" "MGT8"
+			(at 187.452 54.102 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "MOUNTING_HOLE"
+			(at 186.69 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:MOUNTING_HOLE"
+			(at 186.69 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 186.69 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P$1"
+			(uuid "a8dfddc7-a6e7-4406-8e81-cf3df50ca46d")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "MGT8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND")
+		(at 372.11 195.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "42fcb6bf-1c1a-465e-bc75-2d9b8d7a1954")
+		(property "Reference" "#GND016"
+			(at 372.11 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 369.57 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 372.11 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 372.11 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 372.11 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e9b9ea87-612e-4319-8348-0ba1e690f608")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#GND016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_3P3V")
+		(at 205.74 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4952954d-7c1e-4d18-a347-69431705c8b6")
+		(property "Reference" "#SUPPLY025"
+			(at 205.74 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_3P3V"
+			(at 205.74 177.546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 205.74 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c6c124ca-fcfa-4b83-842c-a3fffc3c1456")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_1P8V")
+		(at 165.1 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "50648d38-851b-4f74-bdc9-6631c81596e7")
+		(property "Reference" "#SUPPLY021"
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_1P8V"
+			(at 165.1 122.936 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5c07fc86-28be-48f3-b802-93bd4c9053a4")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND")
+		(at 270.51 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b7bcb26-cb67-4d25-a967-8c3237e5af83")
+		(property "Reference" "#GND09"
+			(at 270.51 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 267.97 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.51 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 270.51 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a074a16-15b7-4b9d-919d-e359375ad705")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#GND09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND")
+		(at 241.3 252.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "62c0b7fa-7bc7-4e80-89de-f0826fc57557")
+		(property "Reference" "#GND018"
+			(at 241.3 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 255.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 241.3 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "760a2df3-816f-4b62-ac36-bfd4005653fe")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#GND018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_5V")
+		(at 72.39 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6a264c1e-7513-4862-a1fe-f0dc36ad222c")
+		(property "Reference" "#SUPPLY022"
+			(at 72.39 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_5V"
+			(at 72.39 227.076 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 72.39 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b3c27fa-ffb1-4b32-88e8-e10c5269adf6")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND")
+		(at 113.03 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6fbf338e-ea3f-45c5-a6eb-6af93d9d8fde")
+		(property "Reference" "#GND013"
+			(at 113.03 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c7eff5f2-e520-4e76-b39c-3455b65b79a5")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#GND013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_POCKETBEAGLE")
+		(at 52.07 196.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "71dcc935-5eba-464b-af1d-65167570fdb1")
+		(property "Reference" "U2"
+			(at 52.07 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "POCKETBEAGLE"
+			(at 52.07 199.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:POCKETBEAGLE"
+			(at 52.07 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P2_17"
+			(uuid "b46cc998-ac7e-4496-b57a-22ba18377eae")
+		)
+		(pin "P2_21"
+			(uuid "6ea47be3-3c32-442f-aaf5-7aeeb8a849eb")
+		)
+		(pin "P2_23"
+			(uuid "8be86b3a-3aa9-4e95-bede-0a58b7ebd1c2")
+		)
+		(pin "P2_30"
+			(uuid "a49be944-b7ed-4012-99ff-6bbdbc1cc3ad")
+		)
+		(pin "P2_24"
+			(uuid "9cf38da7-1b8f-4b92-aceb-789b76cefd5a")
+		)
+		(pin "P2_27"
+			(uuid "c14e4024-39e8-48fc-9684-8f83ea4acd61")
+		)
+		(pin "P2_26"
+			(uuid "80c291dd-b936-4d3f-81a9-11983a553062")
+		)
+		(pin "P2_31"
+			(uuid "4493d40f-0677-4615-aafe-86587f2a49ec")
+		)
+		(pin "P2_20"
+			(uuid "f6b049de-81df-4fbe-8722-97a6cc318130")
+		)
+		(pin "P2_28"
+			(uuid "df6d7d6c-d957-4a63-9f87-5b24a6f27a17")
+		)
+		(pin "P2_19"
+			(uuid "a64b9aa0-7558-4731-9562-f79df538f205")
+		)
+		(pin "P2_25"
+			(uuid "dfd2dfcb-d4a3-48ad-bcb7-f105ce2b89cf")
+		)
+		(pin "P2_33"
+			(uuid "832c4f07-e0ee-4ca9-b596-c4c50b691d99")
+		)
+		(pin "P2_36"
+			(uuid "fb39d8cf-21d3-492b-89aa-5c5aead8fba1")
+		)
+		(pin "P2_16"
+			(uuid "792d721a-dbab-4fc1-9d01-dd7a6bb6d300")
+		)
+		(pin "P2_18"
+			(uuid "10b62bf7-7747-4a01-be5a-5187cfa12c0c")
+		)
+		(pin "P2_22"
+			(uuid "20147f87-7ee4-4d05-ac5b-de1b410946b7")
+		)
+		(pin "P2_29"
+			(uuid "91e48448-88a4-40e9-a10a-8e26577ecc72")
+		)
+		(pin "P2_35"
+			(uuid "da53718d-f904-4803-bc4e-5002473aa51a")
+		)
+		(pin "P2_34"
+			(uuid "095f6886-42fe-481b-a70b-887c4900d8ad")
+		)
+		(pin "P2_32"
+			(uuid "69cc2fb8-bd38-4325-a64b-32f4971f2e20")
+		)
+		(pin "P1_01"
+			(uuid "6fb89556-2be2-4611-81d2-ecbe3e48273b")
+		)
+		(pin "P1_11"
+			(uuid "25b90671-e61e-43c1-b084-07cf2b208e0b")
+		)
+		(pin "P1_24"
+			(uuid "383aa6aa-5c70-4cc2-87f2-50fc37d722df")
+		)
+		(pin "P1_07"
+			(uuid "35f4bf92-be96-4198-aca6-a5ce031d6b01")
+		)
+		(pin "P1_06"
+			(uuid "0768931a-a5e5-468c-824e-ea32177b7059")
+		)
+		(pin "P1_08"
+			(uuid "926c6d57-d7b2-4ded-86ba-593ea4f7b03a")
+		)
+		(pin "P1_14"
+			(uuid "efe7da77-b223-4ef4-add3-71f33f8cf287")
+		)
+		(pin "P1_22"
+			(uuid "79b781eb-b02b-436c-b9ff-2518f7e97b55")
+		)
+		(pin "P1_09"
+			(uuid "62df237e-4e2c-447e-b8d3-dc573d14d647")
+		)
+		(pin "P1_15"
+			(uuid "25ecb2f2-e908-4f53-961b-a53300c6f707")
+		)
+		(pin "P1_20"
+			(uuid "7c3f22dd-b2e9-48c3-8735-c4e8374342d7")
+		)
+		(pin "P1_35"
+			(uuid "e4a50227-ba5a-4437-b808-1cc6aa877e56")
+		)
+		(pin "P1_02"
+			(uuid "bd397be3-985c-4331-8141-95f89be69398")
+		)
+		(pin "P1_16"
+			(uuid "06b85dc3-b26c-4df2-b847-8bbc87397914")
+		)
+		(pin "P1_18"
+			(uuid "c86aa7f1-98c0-4b9e-84d8-c9a75d08af13")
+		)
+		(pin "P1_19"
+			(uuid "fe21f0d6-90e0-4dc9-b914-705a33e857c6")
+		)
+		(pin "P1_21"
+			(uuid "c397facd-6dc2-4740-8552-54401f576000")
+		)
+		(pin "P1_10"
+			(uuid "ea18ade3-bd6c-42d0-a3e3-a321bf6bcf20")
+		)
+		(pin "P1_04"
+			(uuid "28b31d4e-71da-4f8f-9686-f43f5b8b0a9d")
+		)
+		(pin "P1_03"
+			(uuid "dd9c2a3d-db68-4faf-9234-3c2621f59b8a")
+		)
+		(pin "P1_05"
+			(uuid "28d83866-9f77-46db-8368-10f1e01638b6")
+		)
+		(pin "P1_17"
+			(uuid "4b322944-00ee-4286-83e0-467cca96fcef")
+		)
+		(pin "P1_23"
+			(uuid "7775d7cd-0bc0-45fa-b32b-e072a0879009")
+		)
+		(pin "P1_25"
+			(uuid "1d39cdb4-c4d1-4493-87d6-5d9e3d8d9151")
+		)
+		(pin "P1_13"
+			(uuid "51af0402-9f1d-4e09-8fe7-f06ea19b1b40")
+		)
+		(pin "P1_12"
+			(uuid "36f8302c-2f20-4bbc-8e0a-9f450e37a118")
+		)
+		(pin "P1_26"
+			(uuid "f505557a-43f8-4bf7-84f8-b97081723157")
+		)
+		(pin "P1_27"
+			(uuid "205ab2a2-a30f-43cd-a6c6-1c9e049380e7")
+		)
+		(pin "P1_29"
+			(uuid "09fdb5f9-df26-4c0e-a5d8-0301c05e3141")
+		)
+		(pin "P1_28"
+			(uuid "3194852c-518d-4d9e-810d-cf9c351031d0")
+		)
+		(pin "P1_30"
+			(uuid "3f06a62e-edf8-4b70-b644-324a39f7a977")
+		)
+		(pin "P1_31"
+			(uuid "ba5ce148-8761-4025-ac95-0311b46644bb")
+		)
+		(pin "P1_32"
+			(uuid "ff2911e0-3d8e-43b3-bf9e-a94466ee57bb")
+		)
+		(pin "P1_33"
+			(uuid "045d53a8-fc4b-4b48-9aa3-0f9c43251814")
+		)
+		(pin "P1_34"
+			(uuid "1c422866-6f21-4289-b10a-4642271b722c")
+		)
+		(pin "P1_36"
+			(uuid "36cd0589-64b0-4715-ba18-13862c0bc190")
+		)
+		(pin "P2_01"
+			(uuid "c89e6ceb-a750-40b9-8492-e819efea1254")
+		)
+		(pin "P2_02"
+			(uuid "9e29f848-ac09-496a-b413-de29b3d61f74")
+		)
+		(pin "P2_03"
+			(uuid "edcb2efe-ccfc-47b7-8559-b2f7452ec78f")
+		)
+		(pin "P2_04"
+			(uuid "a8e8771b-7311-4465-bcc0-0325daedaa38")
+		)
+		(pin "P2_07"
+			(uuid "ef37307b-8c33-40c7-90b3-abcb093bc65e")
+		)
+		(pin "P2_10"
+			(uuid "964fc42c-3224-4195-856e-0ed00d6a3ec3")
+		)
+		(pin "P2_08"
+			(uuid "79574d8d-1f50-4927-bd26-4cd025115448")
+		)
+		(pin "P2_12"
+			(uuid "637086f1-db59-41fd-8514-3fced1a541f7")
+		)
+		(pin "P2_05"
+			(uuid "72e9f028-8c44-4817-9c4a-57325bf4e8b3")
+		)
+		(pin "P2_06"
+			(uuid "0ea84605-e405-482b-bda9-55ac9581f084")
+		)
+		(pin "P2_13"
+			(uuid "38e70cd6-970a-4fa8-89c8-c12edcbeb689")
+		)
+		(pin "P2_14"
+			(uuid "79323fba-1ccd-4795-ba1c-659fdf1f18e7")
+		)
+		(pin "P2_11"
+			(uuid "fa33c445-8dd3-406d-802a-4f914a22d004")
+		)
+		(pin "P2_09"
+			(uuid "128063f1-aa3a-48df-a311-19c1ae2270a5")
+		)
+		(pin "P2_15"
+			(uuid "7ff7b78d-1cec-461e-9d8a-3a7a3731b71d")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_POTENTIOMETER")
+		(at 172.72 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72db06c2-9fa3-40a6-a58b-b0b8106fbfdc")
+		(property "Reference" "R7"
+			(at 167.64 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "POTENTIOMETER"
+			(at 175.26 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:POT-PO90S"
+			(at 172.72 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "CW"
+			(uuid "81f273ba-8df4-4afa-b8a6-ce605d813db2")
+		)
+		(pin "S"
+			(uuid "1bc0910b-0741-42ba-a556-5d5150d23a62")
+		)
+		(pin "CCW"
+			(uuid "dd34d185-cac1-45e9-b7aa-a91303c3e36a")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_FIDUCIAL")
+		(at 227.33 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "74e0864e-db53-487b-ac09-44aff11b8127")
+		(property "Reference" "FUD11"
+			(at 227.33 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FIDUCIAL"
+			(at 227.33 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:FIDUCIAL_40MIL"
+			(at 227.33 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P$1"
+			(uuid "e3e15fd1-4a5e-4313-a2bb-63833764fd13")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "FUD11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND")
+		(at 36.83 166.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "788fec32-115e-45ba-ab1c-8c7f059557e9")
+		(property "Reference" "#GND012"
+			(at 36.83 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00931c49-1463-4472-ada6-913c9f3493f5")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#GND012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_3P3V")
+		(at 118.11 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7a5dc683-3b36-480c-bf99-92be2f3eb456")
+		(property "Reference" "#SUPPLY020"
+			(at 118.11 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_3P3V"
+			(at 118.11 30.226 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c36597d5-61e7-441b-b2fb-9dd4cb5ae6df")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_5V")
+		(at 46.99 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7c114155-4fdc-444a-aa07-5d982b541094")
+		(property "Reference" "#SUPPLY016"
+			(at 46.99 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_5V"
+			(at 46.99 32.766 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 46.99 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4bbe2c26-7953-4a36-a95f-a189fa9fcc79")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_FIDUCIAL")
+		(at 207.01 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "852a7a99-b6e4-4be6-8631-8fa17171044c")
+		(property "Reference" "FUD8"
+			(at 207.01 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FIDUCIAL"
+			(at 207.01 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:FIDUCIAL_40MIL"
+			(at 207.01 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P$1"
+			(uuid "e279a995-6b77-44aa-bb6f-836df4cfc602")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "FUD8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_1P8V")
+		(at 243.84 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8686bf66-59d1-4825-a1b1-dd2bb9c4c031")
+		(property "Reference" "#SUPPLY023"
+			(at 243.84 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_1P8V"
+			(at 243.84 122.936 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 243.84 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbe68f12-2372-43be-a699-9e8547135112")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_FIDUCIAL")
+		(at 217.17 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8a23c5f5-b7c0-4786-a846-d537204466ef")
+		(property "Reference" "FUD10"
+			(at 217.17 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FIDUCIAL"
+			(at 217.17 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:FIDUCIAL_40MIL"
+			(at 217.17 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 217.17 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P$1"
+			(uuid "597fec91-f1ba-4195-8fa8-7aa83df756ab")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "FUD10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND")
+		(at 372.11 162.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a36c5fae-12f2-4112-a965-51c431e1a2cc")
+		(property "Reference" "#GND015"
+			(at 372.11 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 369.57 167.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 372.11 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 372.11 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 372.11 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aa55ccc9-d326-4ce5-8941-80dec180d2b0")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#GND015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_CGND")
+		(at 250.19 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a97adfd6-a046-4c6a-a59a-07715e8daa44")
+		(property "Reference" "#SUPPLY019"
+			(at 250.19 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CGND"
+			(at 250.19 65.786 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 250.19 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7d3d187-2aea-41f9-bcea-46b2ff03c0c4")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND")
+		(at 372.11 223.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b12d6089-1598-429b-9531-fa5b5c2906b1")
+		(property "Reference" "#GND017"
+			(at 372.11 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 372.11 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 372.11 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 372.11 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 372.11 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "286964bf-1e1e-454b-82ce-156f1622c268")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#GND017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_FIDUCIAL")
+		(at 207.01 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b14b17d8-e88b-451e-a4e1-04ec8b3ef79f")
+		(property "Reference" "FUD7"
+			(at 207.01 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FIDUCIAL"
+			(at 207.01 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:FIDUCIAL_40MIL"
+			(at 207.01 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P$1"
+			(uuid "70430318-0df4-4364-8edd-2a9f400c2f07")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "FUD7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_MOUNTING_HOLE")
+		(at 166.37 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b20cf631-8a91-4efd-be77-4faeba9a9dff")
+		(property "Reference" "MGT6"
+			(at 167.132 54.102 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "MOUNTING_HOLE"
+			(at 166.37 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:MOUNTING_HOLE"
+			(at 166.37 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P$1"
+			(uuid "7937c082-fc39-4b39-b4bd-c5ac1f7efd3d")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "MGT6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_FIDUCIAL")
+		(at 217.17 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b8a25863-3184-4fff-9394-a34211e7374d")
+		(property "Reference" "FUD9"
+			(at 217.17 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FIDUCIAL"
+			(at 217.17 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:FIDUCIAL_40MIL"
+			(at 217.17 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 217.17 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P$1"
+			(uuid "740e1a34-3d41-42d5-b689-b1b518c6ed73")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "FUD9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_PUSH_BUTTON")
+		(at 218.44 245.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b972c72b-fdcc-49b7-8da0-b70c50885424")
+		(property "Reference" "SW3"
+			(at 210.82 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "PUSH_BUTTON"
+			(at 210.82 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:BUTTON_12.5MM"
+			(at 218.44 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b7a54e69-9db8-4525-9a40-1542e97c0706")
+		)
+		(pin "2"
+			(uuid "d71414f8-7acb-405d-aa92-00b4992e4d42")
+		)
+		(pin "3"
+			(uuid "a07f6fb3-7af9-40c9-b59a-da4ccdffc756")
+		)
+		(pin "4"
+			(uuid "1a74b546-8af5-488a-87a4-eaa5efeb2ce3")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_SCREEN")
+		(at 354.33 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c2309b10-89db-4d85-925e-2d514e337c97")
+		(property "Reference" "SPIDISPLAY1"
+			(at 354.33 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SCREEN"
+			(at 354.33 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:SCREEN"
+			(at 354.33 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 354.33 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 354.33 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "MISO"
+			(uuid "0eb13549-0c9a-4d65-b0e0-0292f9a1b0e9")
+		)
+		(pin "RST"
+			(uuid "a2afecbc-9515-4525-aa3e-2bbefbf49e82")
+		)
+		(pin "DC"
+			(uuid "3ce2c4dd-852a-4df8-b823-d63be5fd2ec6")
+		)
+		(pin "MOSI"
+			(uuid "39928bdc-e684-474b-a7f6-d02f97659861")
+		)
+		(pin "VIN"
+			(uuid "4b4b01de-b9f6-4486-a7b5-f7e02f5de636")
+		)
+		(pin "CLK"
+			(uuid "fa271f60-5be4-458d-b7ea-cf74e600d95c")
+		)
+		(pin "CS"
+			(uuid "e93b2e0f-12e1-464e-9f9f-20d30c78a438")
+		)
+		(pin "GND"
+			(uuid "133de69b-ed0f-4d1a-a161-459be901fe37")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "SPIDISPLAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_5V")
+		(at 107.95 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c31b56d0-999a-4629-b528-8dc868aa96d8")
+		(property "Reference" "#SUPPLY018"
+			(at 107.95 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_5V"
+			(at 107.95 35.306 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 107.95 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8f493a9d-4b22-45be-85ba-aebc67480926")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_LED")
+		(at 359.41 190.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c4275922-8766-4a4e-b550-5f80300f4729")
+		(property "Reference" "D4"
+			(at 356.87 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "GREEN_LED"
+			(at 356.87 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:EIA-STD"
+			(at 359.41 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 359.41 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "ANODE"
+			(uuid "c68f9d33-3025-4c3b-b7a8-34b092b436e6")
+		)
+		(pin "CATHODE"
+			(uuid "5efd328b-bbf2-4959-b352-ab3871453a71")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_3P3V")
+		(at 36.83 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c97e3d86-e7d9-4b54-addd-51afaea46870")
+		(property "Reference" "#SUPPLY014"
+			(at 36.83 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_3P3V"
+			(at 36.83 35.306 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21e96ee8-cf50-4125-9933-abce792943d4")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_VDD_3P3V")
+		(at 198.12 224.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d670ebed-be00-4e53-8891-2c436eef5202")
+		(property "Reference" "#SUPPLY024"
+			(at 198.12 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD_3P3V"
+			(at 198.12 220.726 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 224.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d58f8c8e-56a4-4fb4-acbe-f4907b2010a1")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_R_R0603")
+		(at 198.12 234.95 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d8283617-6111-49d0-bfb5-7e42a46d82a7")
+		(property "Reference" "R9"
+			(at 195.58 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1k"
+			(at 195.58 232.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:R0603"
+			(at 198.12 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "84392b3e-e662-49cb-a96a-87ed311811aa")
+		)
+		(pin "1"
+			(uuid "4feef1f4-85ca-49de-a691-b6137754426e")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_GND")
+		(at 67.31 246.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "df2e3454-2806-4494-a8d7-08aa856ce8d6")
+		(property "Reference" "#GND014"
+			(at 67.31 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 248.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 67.31 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fd99ef4a-8109-493a-937e-bf7f299617b0")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#GND014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_LED")
+		(at 361.95 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e35b0e8d-d0ca-4585-8221-04ed7b377fdc")
+		(property "Reference" "D6"
+			(at 359.41 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "BLUE_LED"
+			(at 359.41 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:EIA-STD"
+			(at 361.95 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 361.95 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 361.95 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "CATHODE"
+			(uuid "8f8ac016-fd90-44e4-8f04-ca87180d3f30")
+		)
+		(pin "ANODE"
+			(uuid "26080d35-fbcb-4f15-be8c-9ca1b665128a")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_MOUNTING_HOLE")
+		(at 156.21 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e5cbe714-9f37-4968-872f-5c93b78f8968")
+		(property "Reference" "MGT5"
+			(at 156.972 54.102 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "MOUNTING_HOLE"
+			(at 156.21 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:MOUNTING_HOLE"
+			(at 156.21 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 156.21 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P$1"
+			(uuid "57d9e99f-2135-498c-b1a0-7aa9caf8154f")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "MGT5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_FIDUCIAL")
+		(at 227.33 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e96e0578-9a5d-4658-a6a1-45e51921a48d")
+		(property "Reference" "FUD12"
+			(at 227.33 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FIDUCIAL"
+			(at 227.33 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:FIDUCIAL_40MIL"
+			(at 227.33 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "P$1"
+			(uuid "22522d4a-17ef-4b5f-a371-2bf06b5f968c")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "FUD12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_CGND")
+		(at 186.69 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ec1d4ce2-1ca1-4327-977a-165e5cd7818d")
+		(property "Reference" "#SUPPLY017"
+			(at 186.69 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CGND"
+			(at 186.69 65.786 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 186.69 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bdc7d6f1-c6a1-4371-a61a-f16aa6554510")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "#SUPPLY017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Nicholas_Melendez_EtchASketch-eagle-import:Etch_A_Sketch_R_R0603")
+		(at 260.35 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fad893f6-ac2b-4685-bbee-2a1393c1046d")
+		(property "Reference" "R6"
+			(at 257.81 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1k"
+			(at 262.89 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Nicholas_Melendez_EtchASketch:R0603"
+			(at 260.35 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 260.35 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4139104e-6206-4d1e-9508-7a8a24ff340a")
+		)
+		(pin "1"
+			(uuid "9646b2d7-2423-428e-b1f6-93959b703353")
+		)
+		(instances
+			(project "Nicholas_Melendez_EtchASketch"
+				(path "/69ba311f-74cc-4810-9658-ea17ce43f9e6"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
