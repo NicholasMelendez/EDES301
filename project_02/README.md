@@ -17,6 +17,8 @@ The EtchASketch was designed using the PocketBeagle Microprocessor, and it conta
 
 * One USB port (For future expansion)
 
+* An Image of the GOAT Gojo Satoru
+
 
 
 In addition to the KiCad files, the directory for project_02 also contains generated Gerber and Drill files for the PCB, A generated Bill of Materials document, Images of the Top and Bottom views of the PCB, a PDF of the Schematic, and a presentation containing the mechanical block diagram and the system block diagram
