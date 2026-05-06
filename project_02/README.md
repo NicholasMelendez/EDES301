@@ -1,4 +1,4 @@
-# EDES301 Project_02: EtchASketch PCD Design
+# EDES301 Project_02: EtchASketch PCB Design
 
 
 
